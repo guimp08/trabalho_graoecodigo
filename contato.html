@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grão & Código | Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho e menu de navegação -->
+    <header>
+        <div class="brand">
+            ☕ Grão & Código
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="espaco.html">Coworking</a></li>
+                <li><a href="contato.html" class="ativo">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="content-grid">
+            <div>
+                <span class="tag">Vamos conversar</span>
+                <h1>Entre em contato</h1>
+                <p>
+                    Tem alguma dúvida, sugestão ou quer saber mais
+                    sobre o espaço coworking? Envie uma mensagem.
+                </p>
+                <!-- Informações de contato -->
+                <div class="panel">
+                    <p>
+                        <strong>Endereço:</strong>
+                        Recife - PE
+                    </p>
+                    <p>
+                        <strong>E-mail:</strong>
+                        contato@grao&codigo.com
+                    </p>
+                    <p>
+                        <strong>Horário:</strong>
+                        Segunda a sábado, das 8h às 19h
+                    </p>
+                </div>
+            </div>
+            <img
+                src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1000"
+                alt="Interior aconchegante de uma cafeteria"
+            >
+        </section>
+        <!-- Formulário de contato -->
+        <section class="panel">
+            <h2>Envie sua mensagem</h2>
+            <form onsubmit="event.preventDefault(); alert('Mensagem enviada! (demonstração acadêmica)');">
+                <label for="nome">Nome</label>
+                <input
+                    id="nome"
+                    type="text"
+                    placeholder="Seu nome"
+                    required
+                >
+                <label for="email">E-mail</label>
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="seuemail@exemplo.com"
+                    required
+                >
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                    id="mensagem"
+                    placeholder="Escreva sua mensagem..."
+                    required
+                ></textarea>
+                <button
+                    class="btn"
+                    type="submit"
+                    style="border: 0; cursor: pointer;"
+                >
+                    Enviar mensagem
+                </button>
+            </form>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        © 2026 Grão & Código — Projeto acadêmico de Desenvolvimento Web
+    </footer>
+</body>
+</html>
